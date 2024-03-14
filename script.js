@@ -38,7 +38,6 @@ function play(){
     const moves=bubbleSort(copy);
     animate(moves);
 }
-
 function animate(moves){
     if(moves.length==0){
         showBars();
@@ -63,7 +62,7 @@ function bubbleSort(array){
     do{
         var swapped = false;
         for(let i=1 ; i<array.length; i++){
-            //moves.push({indices:[i-1,i], type:"comp"});
+            //7                                                       moves.push({indices:[i-1,i], type:"comp"});
             if(array[i-1]> array[i]){
                 swapped=true;
                 moves.push({indices:[i-1,i], type:"swap"});
